@@ -1,7 +1,4 @@
-export interface IStat {
-    name: string;
-    base_stat: number;
-}
+import { IStat } from './stat.model';
 
 export interface IPokemon {
     id: number;
@@ -12,9 +9,7 @@ export interface IPokemon {
     type1: string;
     type2?: string;
     abilities: string[];
-    hidenAbility?: string;
+    hiddenAbility?: string;
     stats: IStat[];
-    
-
-
+    description?: string;
 }
